@@ -1,0 +1,78 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "رفع ملف";
+}
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, orange, yellow);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .upload-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .upload-container h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff7904;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e55c00;
+        }
+
+        .message {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h2>رفع ملف</h2>
+
+        <form asp-action="Upload" asp-controller="Home" method="post" enctype="multipart/form-data">
+            <input type="file" name="uploadedFile" required />
+            <br />
+            <button type="submit" class="btn">رفع</button>
+        </form>
+
+        @if (ViewBag.Message != null)
+        {
+            <div class="message">@ViewBag.Message</div>
+        }
+    </div>
+</body>
+</html>

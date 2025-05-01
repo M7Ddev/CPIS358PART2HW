@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using cpis358e2.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -48,6 +48,42 @@ namespace cpis358e2.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Upload()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult Upload(IFormFile uploadedFile)
+        {
+            if (uploadedFile != null && uploadedFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                var filePath = Path.Combine(uploadsFolder, uploadedFile.FileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    uploadedFile.CopyTo(stream);
+                }
+
+                ViewBag.Message = "☑️ تم رفع الملف بنجاح!";
+            }
+            else
+            {
+                ViewBag.Message = "⚠️ لم يتم تحديد أي ملف.";
+            }
+
+            return View();
+        }
+
+
 
 
     }

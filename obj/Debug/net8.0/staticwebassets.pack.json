@@ -257,6 +257,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\wwwroot\\uploads\\4CVlrO1z_400x400.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4CVlrO1z_400x400.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.cpis358e2.props",
       "PackagePath": "build\\cpis358e2.props"
     },

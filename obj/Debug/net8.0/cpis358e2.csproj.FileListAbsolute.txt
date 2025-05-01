@@ -698,3 +698,4 @@ C:\Users\mkhal\Downloads\cpis358e2 (2)\cpis358e2 (2)\cpis358e2\obj\Debug\net8.0\
 C:\Users\mkhal\Downloads\cpis358e2 (2)\cpis358e2 (2)\cpis358e2\obj\Debug\net8.0\cpis358e2.pdb
 C:\Users\mkhal\Downloads\cpis358e2 (2)\cpis358e2 (2)\cpis358e2\obj\Debug\net8.0\cpis358e2.genruntimeconfig.cache
 C:\Users\mkhal\Downloads\cpis358e2 (2)\cpis358e2 (2)\cpis358e2\obj\Debug\net8.0\ref\cpis358e2.dll
+C:\Users\mkhal\Downloads\cpis358e2 (2)\cpis358e2 (2)\cpis358e2\obj\Debug\net8.0\cpis358e2.sourcelink.json

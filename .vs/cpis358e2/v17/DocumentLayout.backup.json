@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|c:\\users\\mkhal\\downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|c:\\users\\mkhal\\downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\wwwroot\\uploads\\4cvlro1z_400x400.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|solutionrelative:wwwroot\\uploads\\4cvlro1z_400x400.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|c:\\users\\mkhal\\downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|c:\\users\\mkhal\\downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\views\\home\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|solutionrelative:views\\home\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|c:\\users\\mkhal\\downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{773CB293-48E9-AA74-0296-D2F3264551CA}|cpis358e2.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "4CVlrO1z_400x400.jpg - Bitmap [400x400, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\wwwroot\\uploads\\4CVlrO1z_400x400.jpg",
+              "RelativeDocumentMoniker": "wwwroot\\uploads\\4CVlrO1z_400x400.jpg",
+              "ToolTip": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\wwwroot\\uploads\\4CVlrO1z_400x400.jpg - Bitmap [400x400, 24 bit, JPG]",
+              "RelativeToolTip": "wwwroot\\uploads\\4CVlrO1z_400x400.jpg - Bitmap [400x400, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-05-01T20:17:14.288Z",
+              "EditorCaption": " - Bitmap [400x400, 24 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T19:58:21.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T19:51:45.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Home\\Upload.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Views\\Home\\Upload.cshtml",
+              "RelativeToolTip": "Views\\Home\\Upload.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T19:42:33.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\mkhal\\Downloads\\cpis358e2 (2)\\cpis358e2 (2)\\cpis358e2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAA3wDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:39:30.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

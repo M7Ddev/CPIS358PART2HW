@@ -1,0 +1,57 @@
+﻿@{
+    Layout = null;
+
+    ViewData["Title"] = "دورة CSS";
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.8rem;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ماذا ستتعلم في CSS؟</h1>
+    <ul>
+        <li>🎨 تنسيق العناصر</li>
+        <li>🎨 استخدام الألوان والخطوط</li>
+        <li>🎨 الـ Box Model</li>
+        <li>🎨 Flexbox وGrid</li>
+        <li>🎨 التنسيق المتجاوب (Responsive Design)</li>
+    </ul>
+    <a href="/Home/Index" class="btn">🔙 رجوع للصفحة الرئيسية</a>
+</body>
+</html>

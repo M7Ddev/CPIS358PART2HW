@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+
+    ViewData["Title"] = "من نحن";
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            color: white;
+            font-size: 2rem;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            margin-top: 3rem;
+        }
+
+        p {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .about {
+            text-align: center;
+            font-size: 4rem;
+            display: block;
+            padding-top: 20px;
+        }
+
+        .mode-toggle {
+            margin-top: 2rem;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="toggleBtn" class="mode-toggle"> 🌙 </button>
+
+    <div class="about">
+        <h1> من <span>نحن</span></h1>
+    </div>
+
+    <article style="text-align:center">
+        <p>مجموعة طلاب من جامعة الملك عبدالعزيز تخصص نظم المعلومات نهدف الى تعليم الاطفال تطوير الويب</p>
+        <br />
+        محمد الغفاري <br />
+        نواف القرشي <br />
+        عبدالعزيز الصيعري <br />
+    </article>
+
+    <div style="text-align: center">
+        <a href="/Home/Index" class="btn">🔙 رجوع إلى الصفحة الرئيسية</a>
+    </div>
+
+    <script src="~/js/index.js" asp-append-version="true"></script>
+</body>
+</html>

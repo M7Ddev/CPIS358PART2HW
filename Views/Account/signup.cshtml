@@ -1,0 +1,143 @@
+﻿@{
+    Layout = null;
+
+    ViewData["Title"] = "إنشاء حساب";
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(to right, rgb(255, 149, 0), yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+            .wrapper h1 {
+                text-align: center;
+                margin-bottom: 25px;
+                color: #333;
+            }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+            .input-box input {
+                width: 100%;
+                padding: 12px 40px 12px 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                font-size: 14px;
+                outline: none;
+                transition: 0.3s;
+            }
+
+                .input-box input:focus {
+                    border-color: #c0392b;
+                }
+
+            .input-box i {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888;
+                font-size: 18px;
+            }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #c0392b;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background: #a93226;
+                transform: scale(1.02);
+            }
+
+        .member {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+            .member a {
+                color: #c0392b;
+                text-decoration: none;
+            }
+
+                .member a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+
+        <form asp-action="Signup" asp-controller="Account" method="post">
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required />
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email" required />
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required />
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit" class="btn">Sign Up</button>
+
+            <div class="member">
+                Already a member? <a href="/Account/Login">Login Here</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

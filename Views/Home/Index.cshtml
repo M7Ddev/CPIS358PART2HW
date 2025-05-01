@@ -1,0 +1,147 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "الرئيسية";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="website icon" href="~/images/cartoon-character-with-the-desk-working-concept-illustration-free-png.png">
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header class="header"> 
+        <button id="toggleBtn" class="mode-toggle" style="margin-left: 2rem;"> 🌙 </button>
+        <a href="#home" class="logo"> المطور <span>الصغير </span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">الصفحة الرئيسية</a>
+            <a href="#contact">التواصل</a>
+            <a href="/Account/Login">تسجيل دخول</a>
+            <a href="/Account/Signup">انشاء حساب</a>
+            <a href="/Home/AboutUs">من نحن</a>
+        </nav>
+    </header>
+
+    <section class="home hidden" id="home">
+        <div class="home-content">
+            <h1>اهلا بالمطور <span>الصغير</span></h1>
+            <h3 class="text-animation"><span> </span></h3>
+            <p style="font-weight: bold;">ابدأ رحلتك معنا لتعلم تطوير الويب</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammad-alghifari-a559b2324"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/M7Ddev"><i class="bx bxl-github"></i></a>
+            </div>
+
+            <a href="#contact" class="btn">تواصل معنا</a>
+        </div>
+        <div class="home-img">
+            <img src="~/images/cartoon-character-with-the-desk-working-concept-illustration-free-png.png" alt="" />
+        </div>
+    </section>
+
+    <section class="services hidden" id="services">
+        <div id="sound1">
+            <button onclick="myVoice()" class="btn">الدليل الصوتي</button>
+            <p id="soundalert"></p>
+        </div>
+        <h2 class="heading">اهدافنا</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>🚀 تعليم تطوير المواقع</h4>
+                    <p>هدفنا هو تعليم الاطفال تطوير المواقع من الصفر الى الاحتراف باستخدام HTML و CSS و JavaScript</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4> دعم اهداف رؤية 2030</h4>
+                    <p>نهدف الى دعم رؤية 2030 من خلال تعليم الاطفال تطوير المواقع والتطبيقات</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>📝 البرمجة للكل</h4>
+                    <p>نهدف الى تعليم البرمجة للجميع من الصفر الى الاحتراف باستخدام تقنيات حديثة</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>إنشاء موقعك الخاص</h4>
+                    <p>نهدف الى تعليم الاطفال كيفية انشاء موقعهم الخاص من الصفر الى الاحتراف</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials hidden" id="testimonials">
+        <div class="testimonials-box">
+            <h2 class="heading">البرامج</h2>
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <h2>HTML</h2>
+                    <button class="btn" onclick="window.location.href='/Home/Course1'">🚀 ابدأ</button>
+                </div>
+
+                <div class="testimonial-item">
+                    <h2> CSS</h2>
+                    <button class="btn" onclick="window.location.href='/Home/Course2'">🚀 ابدأ</button>
+                </div>
+
+                <div class="testimonial-item">
+                    <h2>JAVASCRIPT</h2>
+                    <button class="btn" onclick="window.location.href='/Home/Course3'">🚀 ابدأ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact hidden" id="contact">
+        <h2 class="heading">تواصل <span>معنا</span></h2>
+        <form name="myform" onsubmit="doneSend()">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="fname" placeholder="Full Name" required />
+                    <input type="email" placeholder="Email" required />
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Phone Number / 0505706211" pattern="^05\d{8}$" required />
+                    <input type="text" placeholder="Subject" required />
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn" />
+            </div>
+        </form>
+        <script>
+            function doneSend() {
+                window.alert("تم ارسال الرسالة بنجاح " + document.forms["myform"]["fname"].value + " شكرا لك");
+            }
+        </script>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/mohammad-alghifari-a559b2324"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/M7Ddev"><i class="bx bxl-github"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="/Home/QA">الأسئلة الشائعة</a></li>
+            <li><a href="/Home/AboutUs">معلومات عنا</a></li>
+        </ul>
+        <p class="copyright">© CPIS 358 GROUP 4 | جميع الحقوق محفوظه</p>
+    </footer>
+
+    <script src="~/js/index.js" asp-append-version="true"></script>
+</body>
+</html>

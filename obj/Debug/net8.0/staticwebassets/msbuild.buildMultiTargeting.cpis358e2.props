@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\cpis358e2.props" />
+</Project>

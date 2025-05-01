@@ -1,0 +1,174 @@
+﻿@{
+    Layout = null;
+
+    ViewData["Title"] = "تسجيل الدخول";
+}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(to right, rgb(255, 149, 0), yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .wrapper {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 30px 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+
+
+            .wrapper h1 {
+                text-align: center;
+                margin-bottom: 30px;
+                color: #333;
+            }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+            .input-box input {
+                width: 100%;
+                padding: 12px 40px 12px 15px;
+                border: 1px solid #b7b6b6;
+                border-radius: 8px;
+                font-size: 14px;
+                outline: none;
+                transition: 0.3s;
+            }
+
+                .input-box input:focus {
+                    border-color: #2980b9;
+                }
+
+            .input-box i {
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #888;
+                font-size: 18px;
+            }
+
+        .show-pass {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #e74c3c;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background: #2573a6;
+            }
+
+        .register {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+            .register a {
+                color: #2980b9;
+                text-decoration: none;
+            }
+
+                .register a:hover {
+                    text-decoration: underline;
+                }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form asp-action="Login" asp-controller="Account" method="post">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required />
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required />
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="show-pass">
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="register">
+                <p>
+                    Don't have an account?
+                    <a href="/Account/Signup">Register</a>
+                </p>
+            </div>
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="error" style="color:red; margin-top:10px;">@ViewBag.Error</div>
+            }
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const pass = document.querySelector("[name='password']");
+            pass.type = (pass.type === "password") ? "text" : "password";
+        }
+    </script>
+</body>
+</html>
